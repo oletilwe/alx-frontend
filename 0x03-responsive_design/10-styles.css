@@ -1,0 +1,46 @@
+/* Section HERO (article)
+   ============================= */
+
+.hero-article {
+  background-size: 150rem 100rem;
+  background-position: 50% 0;
+  position: relative; /* Ensure the hero-article container is relative for absolute positioning */
+}
+
+.hero-article::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero-article .section-inner {
+  text-align: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.hero-article .section-body {
+  position: relative;
+  padding: 7rem 0 0;
+  z-index: 2;
+}
+
+.main-article {
+  padding: 5rem 0;
+}
+
+/* Section HERO section adjustments */
+
+/* Media query for specific adjustments */
+@media (min-width: 768px) {
+  .article-page .section-hero {
+    margin-top: -8.5rem;
+    padding-top: 5rem;
+  }
+}
+

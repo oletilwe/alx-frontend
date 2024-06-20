@@ -1,0 +1,50 @@
+/* 09-styles.css */
+
+/* Footer
+   ============================= */
+
+.footer {
+  --nav-item-font-weight: normal;
+  --nav-item-font-size: var(--font-size-small);
+  padding: var(--footer-padding);
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+}
+
+.footer ul {
+  text-align: right;
+}
+
+.footer-address {
+  color: var(--text-color);
+}
+
+.social-link {
+  display: block;
+}
+
+.social-link > svg {
+  fill: var(--text-color);
+}
+
+/* Media query for max-width: 767px */
+@media (max-width: 767px) {
+  :root {
+    --footer-padding: 5rem 2rem 1rem; /* Override footer-padding variable */
+  }
+
+  .footer .social.nav,
+  .footer .footer-nav {
+    text-align: center;
+  }
+
+  .footer .social.nav li + li,
+  .footer .footer-nav li + li {
+    padding-left: 2rem; /* Add left padding starting from the second li */
+  }
+}
+
